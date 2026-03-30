@@ -3,12 +3,12 @@ services:
     build: .
     command: npm run start:prod
     environment:
-      DB_HOST: db
+      DB_HOST: dpg-d74u1s0ule4c73f9o6u0-a
       DB_PORT: "5432"
-      DB_USER: postgres
-      DB_PASS: postgres
-      DB_NAME: vinyls
-      USE_SSL: "false"
+      DB_USER: vinyls_fhit_user
+      DB_PASS: yrRmFzSJTULMIoNWpyFevAodPposQzR2
+      DB_NAME: vinyls_fhit
+      USE_SSL: true
     ports:
       - "3000:3000"
     depends_on:
